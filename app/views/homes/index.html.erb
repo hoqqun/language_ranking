@@ -1,0 +1,19 @@
+<h1>GitHub Biggest Language </h1>
+<br>
+<h2>現在の集計リポジトリ数: <%= @repo_count %></h2>
+<table>
+  <thead>
+    <tr>
+      <th>言語名</th>
+      <th>サイズ</th>
+    <tr>
+  </thead>
+  <tbody>
+    <% @summaries.each do |summary| %>
+      <tr>
+        <td><%= summary[0] %></td>
+        <td><%= kbyte(summary[1].to_i).to_s %> KB</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
