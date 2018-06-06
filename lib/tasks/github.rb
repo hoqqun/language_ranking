@@ -1,5 +1,7 @@
 require 'net/http'
 require 'json'
+require 'dotenv'
+Dotenv.load
 
 class Tasks::Github
 
@@ -77,7 +79,7 @@ class Tasks::Github
   end
 
   def self.access_token
-    github_key = '2909060036877391e94475997a73165bb9809897'
+    github_key = ENV['GITHUB_KEY']
     'token ' + github_key
   end
 end

@@ -71,5 +71,4 @@ gem 'materialize-sass'
 gem 'material_icons'
 gem 'ransack'
 gem 'whenever'
-
-
+gem 'dotenv-rails'
