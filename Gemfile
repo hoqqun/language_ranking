@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'therubyracer'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -72,3 +72,4 @@ gem 'material_icons'
 gem 'ransack'
 gem 'whenever'
 gem 'dotenv-rails'
+gem 'jquery-rails'

@@ -8,7 +8,6 @@
 # server "db.example.com", user: "deploy", roles: %w{db}
 
 
-
 # role-based syntax
 # ==================
 
@@ -18,7 +17,8 @@
 # Don't use `:all`, it's a meta role.
 
 # role :app, %w{deploy@example.com}, my_property: :my_value
-# role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
+role :web, '192.168.1.12', other_property: :other_value, user: 'wasabi'
+set :deploy_to , '/var/www/language_ranking'
 # role :db,  %w{deploy@example.com}
 
 
