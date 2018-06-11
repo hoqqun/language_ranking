@@ -81,5 +81,4 @@ test:
 production:
   <<: *default
   database: language_ranking_production
-  username: language_ranking
   password: <%= ENV['LANGUAGE_RANKING_DATABASE_PASSWORD'] %>
