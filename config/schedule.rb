@@ -21,6 +21,6 @@
 
 set :environment, :production
 
-every :hour do
+every 5.minutes do 
   runner "Tasks::Github::fetch_repository"
 end
