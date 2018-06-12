@@ -78,3 +78,4 @@ gem 'whenever'
 gem 'dotenv-rails'
 gem 'jquery-rails'
 
+gem 'kaminari'
