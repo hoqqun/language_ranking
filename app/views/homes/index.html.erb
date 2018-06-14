@@ -7,6 +7,7 @@
       <th width="10%">順位</th>
       <th width="15%">言語名</th>
       <th width="30%">サイズ</th>
+      <th>割合</th>
     <tr>
   </thead>
   <tbody>
@@ -15,6 +16,7 @@
         <td><%= row_num(index) %></td>
         <td><%= summary[0] %></td>
         <td><%= kbyte(summary[1].to_i).to_s %> KB</td>
+        <td><%= ratio(summary[1],Language.all_size) %>%</td>
       </tr>
     <% end %>
   </tbody>
